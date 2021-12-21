@@ -8,30 +8,54 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="firstforum.css">
+    <link rel="stylesheet" href="./assert/main.css" />
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <a class = "logo" href="/" style="background-image: url('https://vingroup.net/assets/images/logo.png');">
-                <img src="https://vingroup.net/assets/images/logo.png" alt="vg">
-            </a>
-            <div class="menu">
-                <div class = "bar"></div>
-                <div class = "bar"></div>
-                <div class = "bar"></div>
-            </div>
-            <div class="search">
-                <div class="icon">
-                    <i class="fas fa-search"></i>                
-                </div>
-                <div class="language">
-                    <a href="/">EN</a>
-                    <em>|</em>
-                    <span>VN</span>
-                </div>
-            </div>
+    <div class="nav" id="navID">
+        <div class="row__reverse">
+          <div class="img">
+            <img src="./assert/img/logo.png" class="nav__logo" alt="" />
+          </div>
+          <div class="nav__menu">
+            <input type="checkbox" id="menu_checkbox" />
+            <label for="menu_checkbox">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+          </div>
         </div>
-    </header>
+        <div class="search">
+          <i class="fas fa-search nav_icon"></i>
+          <div class="language">
+            <span class = "active">EN</span>
+            <span class="active">VN</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu" id="menuID">
+        <div class="menu__list">
+          <ul class="menu__list-child">
+            <li class="menu__list-item"><a href="forum.html" class="menu__list-item--link">Trang chủ</a></li>
+            <li class="menu__list-item"><a href="introduction.html" class="menu__list-item--link">giới thiệu tập đoàn</a></li>
+            <li class="menu__list-item haveChild">
+              <a href="LinhVuc.html" class="menu__list-item--link">lĩnh vực hoạt động</a>
+              <ul class="sublist">
+                <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Công nghệ</a></li>
+                <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Công nghiệp</a></li>
+                <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Thương mại & Dịch vụ</a></li>
+              </ul>
+            </li>
+            <li class="menu__list-item"><a href="PhatTrien.html" class="menu__list-item--link">phát triển bền vừng</a></li>
+            <li class="menu__list-item"><a href="CoDong.html" class="menu__list-item--link">quan hệ cổ đông</a></li>
+            <li class="menu__list-item"><a href="SuKien.html" class="menu__list-item--link active">tin tức sự kiện</a></li>
+          </ul>
+          <div class="sublink">
+              <p class="sublink__text">tuyển dụng</p>
+              <p class="sublink__text">liên hệ</p>
+          </div>
+        </div>
+      </div>
     <div class="container-o">
         <div class="first-forum">
             <img src="https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg" alt="">
@@ -41,7 +65,7 @@
         </div>
 
         <div class="second-forum">
-         <a href="/">
+         <a href="SuKien.html">
              <h2 class="title">TIN TỨC SỰ KIỆN</h2>
          </a>
             <div class="eventList">
@@ -50,7 +74,7 @@
                         <img src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Dec/Vinbus.jpg" alt="">
                     </div>
                     <div class="para-title">
-                        <a href="/">
+                        <a href="SuKien.html">
                             <h3>XE BUÝT ĐIỆN VINBUS CHÍNH THỨC THAM GIA MẠNG LƯỚI VẬN TẢI CÔNG CỘNG HÀ NỘI</h3>
                         </a>
                         <p>02-12-2021</p>
@@ -62,7 +86,7 @@
                         <img src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Nov/VinIF.jpg" alt="">
                     </div>
                     <div class="para-title">
-                        <a href="/">
+                        <a href="SuKien.html">
                             <h3>VINGROUP TRAO 40 TỶ ĐỒNG HỌC BỔNG ĐÀO TẠO 300 THẠC SĨ, TIẾN SĨ TRONG NƯỚC</h3>
                         </a>
                         <p>24-11-2021</p>
@@ -73,7 +97,7 @@
                         <img src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Nov/VF1.jpg" alt="">
                     </div>
                     <div class="para-title">
-                        <a href="/">
+                        <a href="SuKien.html">
                             <h3>VINFAST RA MẮT THƯƠNG HIỆU XE ĐIỆN TẠI LOS ANGELES AUTO SHOW 2021 </h3>
                         </a>
                         <p>18-11-2021</p>
@@ -81,7 +105,7 @@
                 </div>
             </div>
             <div class="btnViewAllEvent">
-                <a class ="btnA" href="/">XEM TẤT CẢ</a>
+                <a class ="btnA" href="SuKien.html">XEM TẤT CẢ</a>
             </div>
         </div>
 
@@ -143,7 +167,7 @@
                             <p>Với mảng công nghệ, Vingroup xác định nhiều mũi nhọn để có thể thúc đẩy đầu tư mạnh mẽ, trong đó có ba điểm chính. Đầu tiên là tập trung đầu tư đội ngũ nhân sự, hạ tầng để phát triển, sản xuất phầm mềm. Mũi nhọn thứ hai... </p>
                         </div>
                         <div class ="more">
-                            <a href="/">Xem Thêm...</a>
+                            <a href="LinhVuc.html">Xem Thêm...</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +200,7 @@
                          </div>
                      </div>
                      <div class ="more">
-                         <a href="/">Xem Thêm...</a>
+                         <a href="LinhVuc.html">Xem Thêm...</a>
                      </div>
                  </div>
                 </div>
@@ -228,5 +252,7 @@
             
         </div>
     </div>
+    <script src="./js/app.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

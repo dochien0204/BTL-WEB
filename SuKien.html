@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIN TỨC SỰ KIỆN - Tập đoàn Vingroup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assert/img/favicon.png" />
+    <link rel="stylesheet" href="./assert/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="nav" id="navID">
+      <div class="row__reverse">
+        <div class="img">
+          <img src="./assert/img/logo.png" class="nav__logo" alt="" />
+        </div>
+        <div class="nav__menu">
+          <input type="checkbox" id="menu_checkbox" />
+          <label for="menu_checkbox">
+              <div></div>
+              <div></div>
+              <div></div>
+          </label>
+        </div>
+      </div>
+      <div class="search">
+        <i class="fas fa-search nav_icon"></i>
+        <div class="language">
+          <span class = "active">EN</span>
+          <span class="active">VN</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu" id="menuID">
+      <div class="menu__list">
+        <ul class="menu__list-child">
+          <li class="menu__list-item"><a href="forum.html" class="menu__list-item--link">Trang chủ</a></li>
+          <li class="menu__list-item"><a href="introduction.html" class="menu__list-item--link">giới thiệu tập đoàn</a></li>
+          <li class="menu__list-item haveChild">
+            <a href="LinhVuc.html" class="menu__list-item--link">lĩnh vực hoạt động</a>
+            <ul class="sublist">
+              <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Công nghệ</a></li>
+              <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Công nghiệp</a></li>
+              <li class="sublist__item"><a href="LinhVuc.html" class="sublist__item-link">Thương mại & Dịch vụ</a></li>
+            </ul>
+          </li>
+          <li class="menu__list-item"><a href="PhatTrien.html" class="menu__list-item--link">phát triển bền vừng</a></li>
+          <li class="menu__list-item"><a href="CoDong.html" class="menu__list-item--link">quan hệ cổ đông</a></li>
+          <li class="menu__list-item"><a href="SuKien.html" class="menu__list-item--link active">tin tức sự kiện</a></li>
+        </ul>
+        <div class="sublink">
+            <p class="sublink__text">tuyển dụng</p>
+            <p class="sublink__text">liên hệ</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
+        <p class="title">tin tức sự kiện</p>
+      </div>
+      <select class="slNews" data-aos="fade-up"
+      data-aos-duration="3000">
+        <option selected="selected" value="TẤT CẢ">TẤT CẢ</option>
+        <option value="VINGROUP">VINGROUP</option>
+        <option value="CÔNG NGHỆ">CÔNG NGHỆ</option>
+        <option value="CÔNG NGHIỆP">CÔNG NGHIỆP</option>
+        <option value="BẤT ĐỘNG SẢN">BẤT ĐỘNG SẢN</option>
+        <option value="DU LỊCH-VUI CHƠI-GIẢI TRÍ">DU LỊCH-VUI CHƠI-GIẢI TRÍ</option>
+        <option value="Y TẾ">Y TẾ</option>
+        <option value="GIÁO DỤC">GIÁO DỤC</option>
+        <option value="BÁN LẺ">BÁN LẺ</option>
+      </select>
+      <div>
+        <ul class="list" data-aos="fade-up"
+        data-aos-duration="5000">
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">Tất cả</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">vingroup</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">công nghệ</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">công nghiệp</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">bất động sản</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">du lịch-vui chơi-giải trí</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">y tế</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">giáo dục</a>
+          </li>
+          <li class="list__item-navbar">
+            <a href="#" class="list__item-link">bán lẻ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="news" data-aos="fade-up"
+      data-aos-duration="3000">
+        <ul class="news__list">
+          <li class="news__list-item">
+            <div class="item__news">
+              <div class="news__img">
+                <img src="./assert/img/Vinbus.jpg" class="zoom" alt="" />
+              </div>
+              <div class="news__copy w50">
+                <h4 class="copy__title">Tin công nghiệp</h4>
+                <h3 class="copy__des">
+                  xe buýt điện vinbus chính thức tham gia mạng lưới vận tải công
+                  cộng xã hội
+                </h3>
+                <p class="copy__date">02-12-2021</p>
+              </div>
+            </div>
+          </li>
+          <li class="news__list-item">
+            <div class="item__news">
+              <div class="news__img">
+                <img src="./assert/img/tải xuống.jfif" class="zoom" alt="" />
+              </div>
+              <div class="news__copy ptb20 bgwhite">
+                <h4 class="copy__title">Tin vingroup</h4>
+                <h3 class="copy__des">
+                  Vingroup đã trao 40 tỷ đồng học bổng đào tạo 300 thạc sĩ, tiến
+                  sĩ trong nước
+                </h3>
+                <p class="copy__date">24-11-2021</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="news__bottom">
+          <div class="image">
+            <div class="zoom__in">
+              <figure>
+                <img
+                  src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Dec/Anh 3_Khoi cong nha may pin.jpg"
+                  alt=""
+                />
+              </figure>
+              <div class="text">
+                <h4 class="copy__title">Tin công nghiệp</h4>
+                <h3 class="copy__des">
+                  VINGROUP KHỞI CÔNG NHÀ MÁY SẢN XUẤT PIN VINES TẠI KHU KINH TẾ
+                  VŨNG ÁNG, HÀ TĨNH
+                </h3>
+                <p class="copy__date">12-12-2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="zoom__in">
+              <figure>
+                <img
+                  src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Dec/VF e34.jpg"
+                  alt=""
+                />
+              </figure>
+              <div class="text">
+                <h4 class="copy__title">Tin công nghiệp</h4>
+                <h3 class="copy__des">
+                  VINFAST SẼ BÀN GIAO LÔ XE Ô TÔ ĐIỆN VF e34 ĐẦU TIÊN VÀO NGÀY 25/12/2021
+                </h3>
+                <p class="copy__date">09-12-2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="image">
+            <div class="zoom__in">
+              <figure>
+                <img
+                  src="https://ircdn.vingroup.net/storage/Uploads/0_Tintuchoatdong/2021/Oct/A3.jpg  "
+                  alt=""
+                />
+              </figure>
+              <div class="text">
+                <h4 class="copy__title">Tin công nghiệp</h4>
+                <h3 class="copy__des">
+                  VINGROUP KHỞI CÔNG NHÀ MÁY SẢN XUẤT PIN VINES TẠI KHU KINH TẾ
+                  VŨNG ÁNG, HÀ TĨNH
+                </h3>
+                <p class="copy__date">12-12-2021</p>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="count__next" >
+        <div class="count">
+          <p class="active">1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>4</p>
+          <p>5</p>
+          <i class="fas fa-angle-right count__icon"></i>
+          <i class="fas fa-angle-double-right count__icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__content">
+        <div class="footer__left">
+          <h2 class="left__title">Tập doàn Vingroup (Vingroup JSC)</h2>
+          <p class="left__des">&copy; Bản quyền Vingroup 2019</p>
+          <p class="left__contact">Kết nối với chúng tôi:</p>
+          <ul class="footer__left-list">
+            <li class="footer__list-contact">
+              <i class="fab fa-facebook-f"></i>
+            </li>
+            <li class="footer__list-contact">
+              <i class="fab fa-linkedin-in"></i>
+            </li>
+            <li class="footer__list-contact">
+              <i class="fas fa-paper-plane"></i>
+            </li>
+          </ul>
+          <div class="provision">
+            <p class="line provision_child">Điều khoản sử dụng</p>
+            <p class="provision_child">Chính sách bảo mật</p>
+          </div>
+        </div>
+        <div class="footer__mid">
+          <ul class="mid__list">
+            <li class="mid__list-item"><a href="#">Trang chủ</a></li>
+            <li class="mid__list-item"><a href="#">Giới thiệu tập đoàn</a></li>
+            <li class="mid__list-item"><a href="#">Lĩnh vực hoạt động</a></li>
+            <li class="mid__list-item"><a href="#">Quan hệ cổ đông</a></li>
+            <li class="mid__list-item"><a href="#">Phát triển bền vững</a></li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <ul>
+            <li class="right__list-item"><a href="#">Tin tức sự kiện</a></li>
+            <li class="right__list-item"><a href="#">Sự kiện</a></li>
+            <li class="right__list-item"><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </body>
+  <script src="./js/app.js"></script>
+  <script src="./main.js"></script>
+</html>
