@@ -1,0 +1,667 @@
+@font-face {
+    font-family: riftbold;
+    src: url(font/Rift-Bold.otf);
+}
+
+
+.container-o {
+    max-width: 100vw;
+    /* margin-left: 97px;
+    margin-right: 97px; */
+    font-family: riftbold;
+    padding-left: 98px;
+  
+}
+
+.container-o .first-forum {
+    position: relative;
+    animation-name: first-forum;
+    animation-duration: 1.5s;
+}
+.container-o .first-forum img {
+    width: 100%;
+    height: 935px;
+    object-fit: cover;
+}
+
+.first-forum .note {
+    position: absolute;
+    top: 50%;
+    left: 400px;
+    transform: translate(0, -50%);
+    width: 30%;
+}
+.first-forum .note h3 {
+    color: white;
+    font-size: 64px;
+    position: relative;
+}
+
+@keyframes first-forum {
+    0% {
+        margin-top: 100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* second forum */
+
+@font-face {
+    font-family: regular;
+    src: url(font/Rift.otf);
+}
+@font-face {
+    font-family: sanfanRegular;
+    src: url(font/sanfranciscotext-regular-webfont.woff2);
+}
+@font-face {
+    font-family: riftdemi;
+    src: url(font/fort_foundry_-_rift-demi-webfont.woff2);
+}
+.container-o .second-forum {
+    padding: 84px 317px;
+}
+.second-forum .eventList .event {
+    margin-top: 20px;
+}
+.second-forum a {
+    text-decoration: none;
+}
+
+.second-forum .para-title {
+    display: block;
+}
+
+.second-forum .para-title a h3 {
+    font-size: 21px;
+    color: #424d54;
+    padding: 30px 0 20px 0;
+}
+
+.para-title p {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-family: sanfanRegular;
+   
+}
+.second-forum a .title {
+    font-size: 54px;
+    font-family: regular;
+    color: #424d54;
+    font-weight:100;
+}
+.second-forum .eventList {
+    display: flex;
+   justify-content: space-between;
+   width: 1180px;
+}
+.second-forum .eventList .event {
+    width: 369px;
+    padding-bottom: 60px;
+}
+.second-forum .eventList .event .img img{
+    width: 369px;
+    height: 241px;
+    animation-name: scaleImage;
+}
+.event .img {
+    overflow: hidden;
+}
+.event .img img {
+    transition-duration: 0.7s;
+}
+.img img:hover{
+    display: block;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.event .para-title h3:hover {
+    color: red;
+}
+.btnA {
+    display: inline-block;
+    font-size: 18px;
+}
+.btnA {
+    font-size: 18px;
+    color: #a7a7a7;
+    font-family: riftdemi;
+    background: url('https://vingroup.net/assets/images/ar-g.png');
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-attachment: initial;
+    padding-right: 38px;
+    transition-duration: .3s;
+}
+
+.btnViewAllEvent a:hover {
+    padding-right: 60px;
+    color: red;
+}
+
+
+/* third forum */
+
+@font-face {
+    font-family: riftregular;
+    src: url(font/Rift.otf);
+  }
+  @font-face {
+    font-family: sanfanregular;
+    src: url(font/sanfranciscotext-regular-webfont.woff2);
+  }
+  .third-forum .title-type {
+    padding: 20px 317px;
+    background-color: rgba(0,0,0,0.08);
+  }
+  
+  .title-type .first-tit {
+    text-align: center;
+    font-family: riftregular;
+    font-size: 54px;
+    color:  #d13138;
+  }
+  .title-type .p-normal {
+    font-family: sanfanregular;
+    font-size: 17px;
+    color: (0,0,0,0.1);
+  }
+  
+  .third-forum .tech-details .over .details .dt-icon img {
+    width: 100px;
+    height: 100px;
+  }
+  .tech-details .over .dt-one {
+    /* display: flex; */
+    justify-content: space-between;
+  }
+  
+  .details {
+    position: relative;
+  }
+  .details .dt-icon::after {
+    content: "";
+    display: inline-block;
+    width: 272px;
+    height: 3px;
+    background-color: #dbd5d5;
+    position: absolute;
+    bottom: 0;
+  }
+  .tech-details .over .dt-one .dt-one .dt-hr{
+    height: 5px;
+    width: 50%;
+    background-color: black;
+    padding-top: 50px;
+  }
+  .dt-one {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  
+  .dt-two {
+    padding-top: 30px;
+    padding-left: 50px;
+  }
+  .dt-two h2 {
+    font-size: 58px;
+    color: #d13138;
+    margin-left: 50px;
+    transform: translateX(-50px);
+    padding-bottom: 120px;
+  }
+  .dt-spe .non-spe {
+    font-size: 58px;
+    color: #d13138;
+    margin-left: 50px;
+    transform: translateX(-50px);
+    padding-bottom: 0;
+  }
+  .dt-spe .spe {
+    font-size: 58px;
+    color: #d13138;
+    padding-bottom: 50px;
+  }
+  .dt-two img {
+    height: 200px;
+    width: 373px;
+    object-fit: cover;
+    padding-bottom: 50px;
+    padding-right: 50px;
+  }
+  .tech-details .over {
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  .third-forum .tech-details {
+    padding: 92px 80px 20px 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .overlay-container {
+    position: relative;
+  }
+  .overlay-container .item {
+    display: block;
+  }
+  
+  .overlay-container .overlay-item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: red;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .overlay-item .dt-two h2 {
+    color: white;
+  }
+  
+  .overlay-container:hover .overlay-item{
+    height: 100%;
+    opacity: 1;
+    height: 100%;
+  }
+  .overlay-item .dt-icon img {
+    opacity: 0;
+  }
+  
+  .overlay-item .dt-two p {
+    font-size: 17px;
+    color: white;
+    font-family: sanfanregular;
+    padding-right: 50px;
+  }
+  
+  .overlay-container .overlay-item .more {
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .more a {
+    text-decoration: none;
+    color: white;
+    font-family: sanfanregular;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  
+  .more a:hover {
+    color: rgb(0, 255, 0);
+  }
+  .overlay-container:hover .item {
+    opacity: 0;
+  }
+
+  /* four forum */
+  @font-face {
+    font-family: riftregular;
+    src: url(font/Rift.otf);
+}
+@font-face {
+    font-family: sanfanregular;
+    src: url(font/sanfranciscotext-regular-webfont.woff2);
+}
+.four-forum {
+    padding: 84px 317px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info .left-info {
+    width: 551px;
+}
+.four-forum .relation-title p {
+    font-family: riftregular;
+    font-size: 54px;
+}
+.four-forum .info {
+    padding-top: 55px;
+    margin-top: 55px;
+}
+.info .intro {
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    
+}
+
+.four-forum .info .left-info h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    border-bottom: 2px solid #ededed;
+    position: relative;
+}
+
+.left-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100px;
+    left: 0;
+    background-color: red;
+}
+.left-info img {
+    width: 551px;
+    height: 308px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+}
+
+.left-info .text {
+    font-family: sanfanregular;
+    color: rgba(0,0,0,0.6);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.right-info {
+    transform: translateX(50px);
+}
+.right-info .intro {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+    border-bottom: 2px solid #ededed;
+    position: relative;
+}
+
+.right-info h3::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    width: 100px;
+    left: 0;
+    background-color: red;
+}
+
+.right-info .hose {
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d32d37;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.right-info .cost {
+    padding-top: 10px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 38px;
+}
+
+.under-charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart .under .name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #888888;
+    padding-bottom: 8px;
+}
+
+.right-chart {
+    transform: translateX(-50px);
+}
+
+.chart .under .percent {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+    padding-bottom: 23px;
+}
+
+.chart .under .speci {
+    transform: translateY(-20px);
+}
+.footer{
+    height: 47px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-container {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    z-index: 2;
+  }
+  .header-container .search .fas {
+    position: absolute;
+    transform: translateX(170px);
+    right: 0px;
+  }
+
+  .header-container .search .language {
+    transform: translateY(-44px);
+  }
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-70%);
+    margin-top: 0;
+    margin-left: 0;
+    display: inline-block;
+  }
+  .logo img {
+    width: 44px;
+    height: 27.3px;
+    margin-left: -37px;
+  }
+  .header-container .menu {
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    top: 30%;
+    left: 30px;
+    cursor: pointer;
+  }
+
+  .header-container .language {
+    position: absolute;
+    right: 20px;
+    top: 45px;
+  }
+  .container-o {
+    padding-left: 0;
+    width: 100% !important;
+  }
+  .container-o .first-forum .note h3 {
+    font-size: 45px;
+  }
+  .container-o .first-forum .note {
+    position: absolute;
+    left: 60px;
+    width: 400px;
+  }
+
+  .container-o .second-forum {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  .second-forum {
+    width: 100%;
+  }
+  .second-forum .eventList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second-forum .eventList .event .img img {
+    height: 182.39px;
+    width: 300px;
+  }
+
+  .event .para-title {
+    width: 300px;
+  }
+  .second-forum .eventList .event {
+    width: 300px;
+    padding-bottom: 60px;
+    padding-right: 10px;
+  }
+  .eventList .event .para-title h3 {
+    font-size: 17px;
+  }
+  
+  .third-forum .title-type {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+  .third-forum .first-tit {
+    padding-bottom: 20px;
+  }
+  .third-forum .title-type .first-tit p {
+    font-size: 45px;
+    text-align: center;
+  }
+  .title-type .p-normal {
+    padding-left: 20px;
+  }
+  .third-forum .title-type .p-normal p {
+    font-size: 15px;
+  }
+  .third-forum .tech-details {
+    display: flex;
+    flex-direction: column;
+  }
+  .tech-details .overlay-container {
+    width: 423px;
+    transform: translateX(70px);
+    margin-top: 30px;
+  }
+
+  .four-forum {
+    padding-left: 10px;
+  }
+  .left-info img {
+    width: 406px;
+    height: 308px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+  .right-info {
+    transform: translateX(123px);
+  }
+  .info .right-info img {
+    width: 450px;
+  }
+  .left-info .text {
+    font-family: sanfanregular;
+    color: rgba(0,0,0,0.6);
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .search .icon {
+    font-size: 30px;
+    color: #8C8C8C;
+    margin-left: 50%;
+    margin-bottom: 7px;
+    position: absolute;
+    transform: translateY(-10px);
+    }
+    .header-container .search .language {
+        transform: translateY(-51px);
+    }
+
+    .container-o {
+
+    }
+    .container-o .first-forum img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+  }
+    .container-o .first-forum .note h3{
+      font-size: 40px;
+      transform: translateY(-64px);
+    }
+
+    .second-forum .eventList {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .second-forum .eventList .event {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+    .second-forum .eventList .event .img img {
+      width: 100%;
+      height: 305px;
+      object-fit: cover;
+    }
+    .second-forum .eventList .para-title {
+      width: 100%;
+    }
+    .second-forum .eventList .para-title a h3{
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+
+    .third-forum .tech-details{
+      padding-left: 0;
+      transform: translateX(-43px);
+    }
+    .four-forum {
+      width: 100%;
+      padding-right: 10px;
+    }
+    .four-forum .relation-title {
+      width: 100%;
+    }
+    .four-forum .relation-title p {
+      font-size: 40px;
+    }
+
+  .four-forum .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .four-forum .info {
+    padding-top: 19px;
+    margin-top: 0;
+  }
+  .four-forum .info .left-info {
+    width: 100%;
+  }
+  .four-forum .info .left-info img {
+    width: 100%;
+  }
+
+  .four-forum .info .right-info {
+    padding-top: 30px;
+    transform: translateX(0);
+  }
+  .four-forum .info .right-info img {
+    width: 100%;
+  }
+}

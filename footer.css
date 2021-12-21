@@ -1,0 +1,80 @@
+@font-face {
+    font-family: sanfanbold;
+    src: url(font/SanFranciscoTextBold.woff2);
+}
+@font-face {
+    font-family: sanfanregular;
+    src: url(font/sanfranciscotext-regular-webfont.woff2);
+}
+.footer {
+    background-color: #f7f7f7;
+}
+
+.footer .foot-cont {
+    padding-left: 313px;
+    padding-right: 313px;
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.foot-cont .cmcate h3{
+    font-family: sanfanbold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #2d3236;
+}
+
+.cmcate .cnt{
+    margin: 0;
+    padding-top: 20px;
+}
+.cmcate i{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.cmcate i:hover {
+    color: red;
+}
+.link-fr div {
+    padding-bottom: 5px;
+}
+.foot-cont .link-fr a {
+    text-decoration: none;
+    color: #424d54;
+    font-family: sanfanbold;
+    line-height: 20px;
+}
+
+.link-fr a:hover {
+    color: red;
+}
+
+.foot-cont .link-ev a{
+    text-decoration: none;
+    color: #424d54;
+    font-family: sanfanregular;
+}
+.link-ev a:hover{
+    color: red;
+}
+
+.fnl {
+    padding-top: 20px;
+    display: flex;
+    padding-left: 313px;
+    padding-bottom: 65px;
+}
+.fnl a {
+    text-decoration: none;
+    color: #424d54;
+}
+
+.fnl a:hover {
+    color: red;
+}
+.fnl .hrt {
+    padding-left: 3px;
+    padding-right: 3px;
+}
